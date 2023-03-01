@@ -1,4 +1,4 @@
-package study.orderservice.member;
+package study.ex01.member;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

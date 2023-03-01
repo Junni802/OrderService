@@ -1,4 +1,4 @@
-package study.orderservice.member;
+package study.ex01.member;
 
 import java.util.HashMap;
 import java.util.Map;
