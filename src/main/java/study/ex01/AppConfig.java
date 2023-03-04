@@ -28,8 +28,8 @@ public class AppConfig {
         return new MemberServiceImpl(memberRepository());
     }
 
-    @Bean
-    public OrderService orderService(){
-        return new OrderServiceImpl(memberRepository(), discountPolicy());
-    }
+//    @Bean
+//    public OrderService orderService() {
+//        return new OrderServiceImpl(memberRepository(), discountPolicy());
+//    }
 }
