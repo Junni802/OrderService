@@ -13,13 +13,16 @@ import study.ex01.order.OrderServiceImpl;
 @Configuration
 public class AppConfig {
 
+    // @Bean memberService --> new MemoryMemberRepository()
+    // @Bean OrderService --> new MemoryMemberRepository();
+
     @Bean
-    private static MemoryMemberRepository memberRepository() {
+    public MemoryMemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
 
     @Bean
-    private static RateDiscountPolicy discountPolicy() {
+    public RateDiscountPolicy discountPolicy() {
         return new RateDiscountPolicy();
     }
 
@@ -28,8 +31,8 @@ public class AppConfig {
         return new MemberServiceImpl(memberRepository());
     }
 
-//    @Bean
-//    public OrderService orderService() {
-//        return new OrderServiceImpl(memberRepository(), discountPolicy());
-//    }
+    @Bean
+    public OrderService orderService() {
+        return new OrderServiceImpl(memberRepository(), discountPolicy());
+    }
 }

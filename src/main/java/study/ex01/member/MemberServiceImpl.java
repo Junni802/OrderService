@@ -22,7 +22,7 @@ public class MemberServiceImpl implements MemberService {
         return memberRepository.findById(memberId);
     }
 
-    // 테슨트용도
+    // 테tm트용도
 
     public MemberRepository getMemberRepository() {
         return memberRepository;

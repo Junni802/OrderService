@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService{
         this.discountPolicy = discountPolicy;
     }
 
-
+    // 테스트 용도
     public MemberRepository getMemberRepository() {
         return memberRepository;
     }
