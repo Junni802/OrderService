@@ -9,6 +9,7 @@ import study.ex01.member.Grade;
 import study.ex01.member.Member;
 
 @Component
+@Primary
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
