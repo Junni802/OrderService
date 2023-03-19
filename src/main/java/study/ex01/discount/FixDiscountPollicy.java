@@ -5,9 +5,7 @@ import org.springframework.stereotype.Component;
 import study.ex01.member.Grade;
 import study.ex01.member.Member;
 
-
 @Component
-@Qualifier("")
 public class FixDiscountPollicy implements DiscountPolicy {
 
     private int discountFixAmount = 1000;
